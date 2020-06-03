@@ -43,10 +43,11 @@ def calendar_maker(*args):
             str = c.formatmonth(2020, val)
             print(str)
     if len(args) == 2:
-
+        month = args[0]
+        year = args[1]
         c = calendar.TextCalendar(calendar.SUNDAY)
-        str = c.formatmonth()
+        str = c.formatmonth(year, month)
         print(str)
 
 
-calendar_maker(8, 2020)
+calendar_maker(9, 2020)
